@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sokoban</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Sokoban</h1>
+    <div id="game-container"></div>
+    <div id="controls">
+        <button onclick="move('up')">Arriba</button>
+        <button onclick="move('left')">Izquierda</button>
+        <button onclick="move('down')">Abajo</button>
+        <button onclick="move('right')">Derecha</button>
+    </div>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyCk7Lkbguh0Zq2hmzJLWJulkVZk9eJPbnQ",
+          authDomain: "sokoban-90ef2.firebaseapp.com",
+          projectId: "sokoban-90ef2",
+          storageBucket: "sokoban-90ef2.firebasestorage.app",
+          messagingSenderId: "912194670246",
+          appId: "1:912194670246:web:8f0c9ca8b0365f6be92e67"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
+    <script src="script.js"></script>
+</body>
+</html>
